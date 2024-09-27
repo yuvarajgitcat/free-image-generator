@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #result img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Free Image Generator</h1>
+    
+    <!-- API Key Input -->
+    <input type="text" id="apiKey" placeholder="Enter your Unsplash API key" style="width: 80%;">
+    <br>
+
+    <!-- Prompt Input -->
+    <input type="text" id="promptInput" placeholder="Enter your prompt here (e.g., apple)" style="width: 80%;">
+    <br>
+
+    <!-- Generate Button -->
+    <button onclick="generateImage()">Generate Image</button>
+    <br>
+
+    <!-- Button to Get API Key -->
+    <button onclick="window.open('https://unsplash.com/developers', '_blank')">Get API Key</button>
+    
+    <!-- Result -->
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
